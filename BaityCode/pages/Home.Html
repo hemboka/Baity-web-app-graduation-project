@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>الرئيسية</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+  <div class="container">
+    <div style="position: fixed; top: 15px; left: 15px; z-index: 999;">
+      <button onclick="exitWebsite()" style="background: none; border: none; font-size: 24px; cursor: pointer;">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+    </div>
+
+    <div class="logo">
+      <img src="../imges/BaityLogo.png" alt="Baity" />
+      <p>اطلب طعامك المفضل!</p>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" placeholder="البحث" id="searchInput" />
+      <button id="searchButton"><i class="fas fa-search"></i></button>
+    </div>
+
+    <div class="categories">
+      <button id="main-btn" class="active">وجبة رئيسية</button>
+      <button id="sweets-btn">حلويات</button>
+      <button id="chefs-btn">طباخين</button>
+    </div>
+
+    <div id="loader">جاري التحميل...</div>
+    <div class="card-grid" id="cards-container"></div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="../pages/Home.html"><i class="fa fa-home"></i></a>
+    <a href="../pages/customerProfile.html"><i class="fa fa-user"></i></a>
+    <a href="../pages/customerNotification.html"><i class="fa fa-receipt"></i></a>
+    <a href="../pages/favorites.html"><i class="fa fa-heart"></i></a>
+  </div>
+
+  <script src="../js/home.js"></script>
+</body>
+</html>

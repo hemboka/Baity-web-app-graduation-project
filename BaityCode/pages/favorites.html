@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المفضلة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="../css/favorites.css">
+</head>
+<body>
+
+  <div class="header">
+    <button class="back-btn" onclick="goBack()">
+      <i class="fas fa-arrow-left"></i>
+    </button>
+    <h2>المفضلة</h2>
+  </div>
+
+  <div class="container">
+    <div class="card-grid" id="favoritesContainer"></div>
+    <div class="empty-message" id="emptyMessage" style="display: none;">لا توجد وجبات في المفضلة حاليًا.</div>
+  </div>
+
+  <script src="../js/favorites.js"></script>
+
+</body>
+</html>

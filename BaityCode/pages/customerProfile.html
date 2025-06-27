@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ملف المستخدم</title>
+
+  <!-- Google Fonts + Material Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/customerProfile.css">
+</head>
+<body>
+
+  <div class="header">
+    <img src="../imges/customer.png" alt="Profile" />
+  </div>
+
+  <div class="container">
+    <!-- بيانات المستخدم -->
+    <div class="form-group">
+      <label for="name">الاسم</label>
+      <input type="text" id="name" disabled>
+    </div>
+    <div class="form-group">
+      <label for="email">الإيميل</label>
+      <input type="email" id="email" disabled>
+    </div>
+    <div class="form-group">
+      <label for="address">العنوان</label>
+      <input type="text" id="address" disabled>
+    </div>
+    <div class="form-group">
+      <label for="password">الرقم السري</label>
+      <input type="password" id="password" placeholder="لن يتم حفظ كلمة السر هنا" disabled>
+    </div>
+
+    <!-- الدفع -->
+    <h2>اختر طريقة الدفع</h2>
+    <label class="payment-option">
+      <input type="radio" name="payment" value="visa" disabled checked> فيزا (Visa)
+    </label>
+    <label class="payment-option">
+      <input type="radio" name="payment" value="mada" disabled> مدى (Mada)
+    </label>
+    <label class="payment-option">
+      <input type="radio" name="payment" value="apple" disabled> Apple Pay
+    </label>
+    <label class="payment-option">
+      <input type="radio" name="payment" value="other" disabled onchange="toggleOtherCardInput()"> بطاقة بنكية أخرى
+    </label>
+    <input type="text" id="otherCardInput" placeholder="أدخل رقم البطاقة" disabled />
+
+    <!-- أزرار تعديل البيانات + تسجيل الخروج -->
+    <div class="form-actions">
+      <button class="btn" onclick="toggleAllEdit()">
+        <i class="material-icons icon-btn" id="editAllIcon">edit</i>
+        <span id="editAllText">تعديل البيانات</span>
+      </button>
+      <button class="btn logout-btn" onclick="logout()">
+        <i class="material-icons icon-btn">logout</i>
+        تسجيل خروج
+      </button>
+    </div>
+
+    <!-- روابط -->
+    <div class="links">
+      <div onclick="window.location.href='../pages/customerNotification.html'">
+        <i class="material-icons">history</i> تاريخ الطلب
+      </div>
+      <div onclick="window.location.href='../pages/Home.html'">
+        <i class="material-icons">home</i> الصفحة الرئيسية
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/customerProfile.js"></script>
+</body>
+</html>

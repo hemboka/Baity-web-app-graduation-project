@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f8f8f8;
+  color: #333;
+  padding-bottom: 80px;
+}
+.container {
+  max-width: 480px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 25px;
+  padding: 20px;
+}
+.logo {
+  text-align: center;
+}
+.logo img {
+  width: 100px;
+}
+.search-bar {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+.search-bar input {
+  flex: 1;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 1px solid #ddd;
+}
+.search-bar button {
+  background: #e63946;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.categories {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.categories button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  background: #f1f1f1;
+  cursor: pointer;
+}
+.categories .active {
+  background: #e63946;
+  color: white;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.card img {
+  border-radius: 12px;
+  height: 120px;
+  object-fit: cover;
+}
+.card h4 {
+  margin: 10px 0 5px;
+}
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+.card .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.card .rating i {
+  color: #e63946;
+}
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #e63946;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.bottom-nav a {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+.bottom-nav .add {
+  background: white;
+  color: #e63946;
+  border-radius: 50%;
+  padding: 10px 15px;
+  font-size: 24px;
+  margin-top: -30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+#loader {
+  text-align: center;
+  margin: 20px;
+  font-size: 16px;
+}

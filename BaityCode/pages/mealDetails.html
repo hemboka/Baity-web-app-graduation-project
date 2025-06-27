@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل الوجبة</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/mealDetails.css">
+</head>
+<body>
+  <div class="meal-container">
+    <img class="meal-image" id="meal-img" src="" alt="Meal Image">
+    <h2 id="meal-name"></h2>
+    <div class="rating">⭐ <span id="meal-rating"></span></div>
+    <p class="desc" id="meal-chef"></p>
+    <p class="desc" id="meal-description"></p>
+
+    <div class="spicy-options" id="spicy-options">
+      <label><input type="radio" name="spicy" value="حار" checked> حار</label>
+      <label><input type="radio" name="spicy" value="بارد"> بارد</label>
+    </div>
+
+    <div class="count-control">
+      <button onclick="updateCount(-1)">-</button>
+      <span id="meal-count">1</span>
+      <button onclick="updateCount(1)">+</button>
+    </div>
+
+    <div class="extra-fields">
+      <input type="text" id="location" placeholder="العنوان">
+      <select id="governorate">
+        <option disabled selected>اختر المحافظة</option>
+      </select>
+    </div>
+
+    <div class="price" id="meal-price"></div>
+    <button class="order-btn" onclick="submitOrder()">اطلب الآن</button>
+    
+    <div class="rating-section">
+      <h3>قيّم الوجبة:</h3>
+      <div class="stars" id="ratingStars">
+        <i class="fa fa-star" data-rate="1"></i>
+        <i class="fa fa-star" data-rate="2"></i>
+        <i class="fa fa-star" data-rate="3"></i>
+        <i class="fa fa-star" data-rate="4"></i>
+        <i class="fa fa-star" data-rate="5"></i>
+      </div>
+    </div>
+  </div>
+
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <div class="icon">
+        <span class="material-icons">check</span>
+      </div>
+      <h2>تم الطلب بنجاح!</h2>
+      <button onclick="window.location.href='/pages/customerNotification.html'">الرجوع</button>
+    </div>
+  </div>
+
+<script src="../js/mealDetails.js"></script>
+</body>
+</html>

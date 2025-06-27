@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>تفاصيل الوجبة</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../css/customerOrdering.css">
+</head>
+<body>
+
+  <div class="meal-container">
+    <img class="meal-image" src="../imges/food.png" alt="شاورما">
+    <h2 id="meal-name">شاورما</h2>
+    <div class="rating">⭐ <span id="meal-rating">4.9</span></div>
+    <p id="meal-description" class="desc">
+      شيف: نهي علي<br>
+      “ساندويتش شاورما لحم أو دجاج مشوي، مغطى بخلطة شاورما غنية، مع شرائح طماطم وخس ومخلل.”
+    </p>
+    <div class="spicy-options">
+      <label><input type="radio" name="spicy" value="حار" checked id="spicy-hot"> حار</label>
+      <label><input type="radio" name="spicy" value="بارد" id="spicy-cold"> بارد</label>
+    </div>
+    <div class="count-control">
+      <button onclick="updateCount(-1)">-</button>
+      <span id="meal-count" class="count">1</span>
+      <button onclick="updateCount(1)">+</button>
+    </div>
+    <div class="price" id="meal-price">50</div>
+    <button class="order-btn" onclick="submitOrder()">اطلب الآن</button>
+  </div>
+
+  <div id="successModal" class="modal">
+    <div class="modal-content">
+      <div class="icon">
+        <span class="material-icons">check</span>
+      </div>
+      <h2>تم طلب الطعام!</h2>
+      <p>انتظر رد الطباخ</p>
+      <button onclick="goToNotifications()">العودة</button>
+    </div>
+  </div>
+
+  <script src="../js/customerOrdering.js"></script>
+</body>
+</html>

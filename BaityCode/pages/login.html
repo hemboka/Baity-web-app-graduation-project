@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="/CSS/logIn.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-header">
+      <h2>أهلاً بك من جديد</h2>
+      <p>سجل الدخول للوصول إلى حسابك</p>
+    </div>
+
+    <!-- اختيار نوع المستخدم -->
+    <div class="user-type">
+      <button id="chefBtn" class="active"><img src="../imges/chef.png" alt="طباخ" /></button>
+      <button id="customerBtn"><img src="../imges/customer.png" alt="عميل" /></button>
+    </div>
+
+    <!-- نموذج تسجيل الدخول -->
+    <form class="login-form" id="loginForm">
+      <div class="input-group">
+        <input id="email" type="text" placeholder="الإيميل" />
+        <i class="fa fa-envelope"></i>
+      </div>
+      <div class="input-group">
+        <input id="password" type="password" placeholder="الرقم السري" />
+        <i class="fa fa-lock"></i>
+      </div>
+
+      <div class="login-options">
+        <label><input type="checkbox" /> تذكرني</label>
+        <a href="#">نسيت كلمة المرور؟</a>
+      </div>
+
+      <button type="button" id="loginBtn" class="login-btn">التالي</button>
+    </form>
+
+    <!-- رابط التسجيل -->
+    <div class="register" id="registerLink">
+      هل أنت عضو جديد؟ <a href="../pages/signup.html">سجل الآن</a>
+    </div>
+
+    <!-- الصور السفلية -->
+    <div class="bottom-images">
+      <img src="../imges/shrimp.png" alt="جمبري" />
+      <img src="../imges/fish.png" alt="سمكة" />
+      <img src="../imges/orange.png" alt="برتقالة" />
+    </div>
+  </div>
+
+<script src="../js/login.js"></script>
+</body>
+</html>

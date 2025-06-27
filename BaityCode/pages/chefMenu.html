@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قائمة الشيف</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+  <link rel="stylesheet" href="../css/chefMenu.css">
+</head>
+<body>
+
+  <div class="header">
+    <button class="back-btn" onclick="window.location.href='../pages/chefProfile.html'">
+      <span class="material-icons">arrow_back</span>
+    </button>
+    <img src="../imges/chef.png" alt="صورة الشيف" />
+  </div>
+
+  <div class="container">
+    <div id="chef-name" class="chef-name">جاري تحميل اسم الشيف...</div>
+
+    <div class="search-box">
+      <input type="text" placeholder="البحث" />
+      <i class="fa fa-search"></i>
+    </div>
+
+    <div class="categories">
+      <button id="btn-food" class="active" onclick="showCategory('food')">وجبة رئيسية</button>
+      <button id="btn-sweet" onclick="showCategory('sweet')">حلويات</button>
+    </div>
+
+    <div class="menu-grid" id="section-food"></div>
+    <div class="menu-grid" id="section-sweet" style="display: none;"></div>
+  </div>
+
+  <div class="bottom-nav">
+    <a href="chefMenu.html"><i class="fa fa-home"></i></a>
+    <a href="chefProfile.html"><i class="fa fa-user"></i></a>
+    <a href="chefNotification.html"><i class="fa fa-receipt"></i></a>
+    <a href="addToMenu.html"><i class="fa fa-plus"></i></a>
+  </div>
+
+  <script src="../js/chefMenu.js"></script>
+
+</body>
+</html>

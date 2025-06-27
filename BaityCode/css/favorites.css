@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.header {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 20px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+.header h2 {
+  color: white;
+  margin: 20px 0 10px;
+  font-size: 24px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.container {
+  padding: 20px;
+  max-width: 480px;
+  margin: auto;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.card img {
+  border-radius: 12px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+}
+
+.card .rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card .rating i {
+  color: #e63946;
+  cursor: pointer;
+}
+
+.empty-message {
+  text-align: center;
+  color: #aaa;
+  margin-top: 40px;
+  font-size: 16px;
+}

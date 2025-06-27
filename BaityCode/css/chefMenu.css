@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+}
+
+body {
+  background: #fff;
+  color: #333;
+  direction: rtl;
+  padding-bottom: 80px;
+}
+
+.back-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.header {
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  padding: 70px 20px 60px;
+  text-align: center;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 20px;
+  background: #fff;
+  padding: 5px;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 80px 15px 20px;
+}
+
+.chef-name {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.search-box {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin: 15px 0;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 1rem;
+  direction: rtl;
+}
+
+.search-box i {
+  color: #999;
+  margin-left: 8px;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.categories button {
+  padding: 10px 20px;
+  border-radius: 15px;
+  border: none;
+  background: #f1f1f1;
+  color: #444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.categories .active {
+  background: #f44336;
+  color: white;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.menu-item {
+  background: white;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.menu-item img {
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.menu-item h4 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #f44336;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.bottom-nav a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
